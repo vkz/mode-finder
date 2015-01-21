@@ -1,0 +1,12 @@
+block rating, this.ctx.max, attrs: {
+    style: 'width:' + this.ctx.max * 16 + 'px'
+}
+
+block rating, elem stars, this._floatValue, attrs: {
+    style: 'width:' + this._floatValue * 100 + '%'
+}
+
+block rating, default: {
+    this._floatValue = this.ctx.floatValue;
+    applyNext();
+}

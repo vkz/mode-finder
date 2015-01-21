@@ -1,0 +1,15 @@
+block serp-head-menu, !this.elem, this._mode === "somemode": {
+    apply({
+        _mode: '',
+        ctx: {
+            block: 'b-menu',
+            mods: { layout: 'vert' },
+            mix: [{
+                block: 'serp-head-menu',
+                js: true
+            }].concat(this.ctx.mix || []),
+            content: this.ctx.content
+        }
+    })
+}
+
