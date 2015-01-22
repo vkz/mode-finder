@@ -1,4 +1,4 @@
-block serp-head-menu, !this.elem, this._mode === "jsAttr": {
+block serp-head-menu, !this.elem, this._mode === "custom": {
     apply({
         _mode: '',
         ctx: {
